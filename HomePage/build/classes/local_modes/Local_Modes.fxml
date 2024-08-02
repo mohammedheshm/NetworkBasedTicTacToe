@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F8EDE3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="local_modes.Local_ModesController">
+    <children>
+        <ImageView fx:id="ticTacToeIcon" fitHeight="120.0" fitWidth="129.0" layoutX="238.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" rotate="-10.0" smooth="true">
+            <image>
+                <Image url="@../resources/xologo.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="ComputerMode" layoutX="180.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleComputerModeButton" prefHeight="34.0" prefWidth="241.0" style="-fx-background-color: #F8EDE3; -fx-font-size: 16px; -fx-padding: 10px 20px; -fx-border-color: #8D493A; -fx-border-width: 2; -fx-border-radius: 10;">
+            <graphic>
+                <Text fill="#8d493a" strokeType="OUTSIDE" strokeWidth="0.0" text="Computer Mode">
+                    <font>
+                        <Font name="Arial" size="25.0" />
+                    </font>
+                </Text>
+            </graphic>
+        </Button>
+        <Button fx:id="TwoPlayers" layoutX="180.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleTwoPlayersButton" prefHeight="46.0" prefWidth="241.0" style="-fx-background-color: #F8EDE3; -fx-font-size: 16px; -fx-padding: 10px 20px; -fx-border-color: #8D493A; -fx-border-width: 2; -fx-border-radius: 10;">
+            <graphic>
+                <Text fill="#8d493a" strokeType="OUTSIDE" strokeWidth="0.0" text="Two Players">
+                    <font>
+                        <Font name="Arial" size="25.0" />
+                    </font>
+                </Text>
+            </graphic>
+        </Button>
+        
+        <Button layoutX="25.0" layoutY="336.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#handleBackHButton" prefHeight="44.0" prefWidth="44.0" scaleShape="false" styleClass="round-button" stylesheets="@../style/styles.css">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="48.0" preserveRatio="true">
+                    <image>
+                        <Image url="@../resources/arrowb.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+       
+    </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox xmlns:fx="http://javafx.com/fxml" spacing="10" style="-fx-padding: 10; -fx-alignment: CENTER_LEFT; -fx-background-color: #D0B8A8;">
+    <ImageView fx:id="playerIcon" fitHeight="30" fitWidth="30" />
+    <Text fx:id="playerName" style="-fx-font-size: 16px; -fx-fill: #8D493A;" />
+    <Text fx:id="playerScore" style="-fx-font-size: 16px; -fx-fill: #8D493A;" />
+</HBox>

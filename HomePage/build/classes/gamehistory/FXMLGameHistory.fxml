@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="608.0" style="-fx-background-color: #F8EDE3;" stylesheets="@../style/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamehistory.FXMLGameHistoryController">
+    <children>
+        <TableView fx:id="tableView" layoutX="36.0" layoutY="108.0" prefHeight="324.0" prefWidth="539.0" style="-fx-background-color: #F8EDE3;" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="108.0">
+            <columns>
+                <TableColumn fx:id="gameId" prefWidth="54.0" text="Game ID" />
+                <TableColumn fx:id="player1" prefWidth="101.999" text="Player 1" />
+                <TableColumn fx:id="player2" minWidth="0.0" prefWidth="110.0" text="Player 2" />
+                <TableColumn fx:id="winner" minWidth="0.0" prefWidth="94.0" text="Winner" />
+                <TableColumn fx:id="dateTime" minWidth="0.0" prefWidth="177.0" text="Date Time" />
+            </columns>
+        </TableView>
+        <ImageView fitHeight="48.0" fitWidth="329.0" layoutX="136.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resources/gamehistory.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="12.0" layoutY="452.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" scaleShape="false" styleClass="round-button">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="48.0" preserveRatio="true">
+                    <image>
+                        <Image url="@../resources/arrowb.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>

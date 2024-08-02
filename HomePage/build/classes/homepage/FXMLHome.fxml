@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F8EDE3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homepage.FXMLHomeController">
+   <children>
+      <ImageView fx:id="ticTacToeIcon" fitHeight="107.0" fitWidth="116.0" layoutX="236.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" rotate="-10.0" smooth="true">
+         <image>
+            <Image url="@../resources/xologo.png" />
+         </image></ImageView>
+      <Button fx:id="localModeButton" layoutX="177.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleLocalModeButton" prefHeight="34.0" prefWidth="241.0" style="-fx-background-color: #F8EDE3; -fx-font-size: 16px; -fx-padding: 10px 20px; -fx-border-color: #8D493A; -fx-border-width: 2; -fx-border-radius: 10;">
+         <graphic>
+            <Text fill="#8d493a" strokeType="OUTSIDE" strokeWidth="0.0" text="Local Mode">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Text>
+         </graphic></Button>
+      <ImageView fitHeight="65.0" fitWidth="67.0" layoutX="158.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" smooth="true">
+         <image>
+            <Image url="@../resources/local.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="localModeButton2" layoutX="177.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleOnlineModeButton" prefHeight="46.0" prefWidth="241.0" style="-fx-background-color: #F8EDE3; -fx-font-size: 16px; -fx-padding: 10px 20px; -fx-border-color: #8D493A; -fx-border-width: 2; -fx-border-radius: 10;">
+         <graphic>
+            <Text fill="#8d493a" strokeType="OUTSIDE" strokeWidth="0.0" text="Online Mode">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Text>
+         </graphic></Button>
+      <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="155.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true" smooth="true">
+         <image>
+            <Image url="@../resources/online.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

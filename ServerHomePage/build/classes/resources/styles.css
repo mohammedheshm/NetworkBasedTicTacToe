@@ -1,0 +1,23 @@
+.round-button {
+    -fx-background-color: transparent; /* Makes background transparent to show image */
+    -fx-background-radius: 50%; /* Makes the button round */
+    -fx-border-radius: 50%; /* Rounds the border */
+    -fx-border-width: 2; /* Optional: border width */
+    -fx-border-color: #000000; /* Optional: border color */
+    -fx-padding: 0; /* Optional: remove padding */
+    -fx-shape: "M 0,0 H 1 V 1 H 0 Z"; /* Custom shape, optional */
+}
+.table-view .column-header-background {
+    -fx-background-color: #D0B8A8; /* Change this to your desired header color */
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #ffffff; /* Change this to your desired row color */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #8D493A; /* Change this to your desired header text color */
+    -fx-font-weight: bold;
+}
+
+
